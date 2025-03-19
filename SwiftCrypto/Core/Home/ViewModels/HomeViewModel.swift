@@ -24,7 +24,6 @@ class HomeViewModel:ObservableObject{
         dataService.$allCoins
             .sink{ [weak self] (returnedCoins) in
                 self?.allCoins = returnedCoins
-                
             }
             .store(in: &cancellables)
     }
