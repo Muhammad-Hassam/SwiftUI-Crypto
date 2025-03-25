@@ -17,6 +17,7 @@ struct HomeView: View {
             Color.theme.background.ignoresSafeArea()
             VStack{
                 homeHeader
+                HomeStatisticsView(showPortfolio: $showPortfolio)
                 SearchBarView(searchText: $vm.searchText)
                 columnTitles
                 if !showPortfolio {
