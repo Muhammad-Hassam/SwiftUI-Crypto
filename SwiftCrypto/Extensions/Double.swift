@@ -25,7 +25,7 @@ extension Double {
 //        formatter.currencyCode = "usd"  <- defaul value
 //        formatter.currencySymbol = "$" <- defaul value
         formatter.minimumFractionDigits = 2
-        formatter.maximumFractionDigits = 6
+        formatter.maximumFractionDigits = 2
         return formatter
     }
     
